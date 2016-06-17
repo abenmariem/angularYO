@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="angularYoApp">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<ng-view></ng-view>
+
+
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="../bower_components/jsonp/jsonp.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/factories/ergast-api-service-factory.js"></script>
+<script src="scripts/controllers/drivers-list-controller.js"></script>
+<script src="scripts/controllers/driver-details-controller.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
